@@ -1,0 +1,89 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+</head>
+<body>
+
+    <h1>Contact Info</h1>
+
+    <form action="confirm.html" method="get">
+
+        <label for="name">Name:</label><br>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required 
+            autofocus 
+            placeholder="Enter your full name"
+            title="Please enter your full name">
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            placeholder="example@email.com"
+            title="Please enter a valid email address">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input 
+            type="date" 
+            id="dob" 
+            name="dob" 
+            required 
+            title="Please enter your date of birth">
+        <br><br>
+
+        <label for="phone">Mobile Phone:</label><br>
+        <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            required 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+            placeholder="nnn-nnn-nnnn"
+            title="Phone number must be in this format: 123-456-7890">
+        <br><br>
+
+        <label for="zip">Zip Code:</label><br>
+        <input 
+            type="text" 
+            id="zip" 
+            name="zip" 
+            required 
+            pattern="[0-9]{5}" 
+            placeholder="nnnnn"
+            title="Zip code must be 5 numbers, like 92101">
+        <br><br>
+
+        <input type="submit" value="Save">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+</head>
+<body>
+
+    <h1>Contact Info Saved</h1>
+
+    <p>Your contact information has been submitted successfully.</p>
+
+    <a href="index.html">Return to Contact Info Form</a>
+
+</body>
+</html>
